@@ -1,0 +1,76 @@
+/* Styles pour le composant Favorites */
+.favorites-container {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  background: linear-gradient(135deg, rgba(168, 237, 234, 0.2) 0%, rgba(254, 214, 227, 0.2) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(168, 237, 234, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.favorites-container h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.favorite-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.favorite-button {
+  padding: 8px 30px 8px 16px;
+  background: linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(116, 185, 255, 0.4);
+}
+
+.favorite-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(116, 185, 255, 0.6);
+}
+
+.remove-favorite-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 154, 158, 0.4);
+}
+
+.remove-favorite-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px rgba(255, 154, 158, 0.6);
+}
