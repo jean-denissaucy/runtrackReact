@@ -62,7 +62,7 @@ const Favorites = ({ onSelectCity, addToFavorites, removeFromFavorites }) => {
                             className="remove-favorite-btn"
                             title="Retirer des favoris"
                         >
-                            ✕
+
                         </button>
                     </div>
                 ))}
