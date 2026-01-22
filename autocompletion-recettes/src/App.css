@@ -1,0 +1,36 @@
+.App {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Mode sombre global */
+body.dark-mode {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .App {
+  background: #1a1a1a;
+}
+
+/* Styles d'impression */
+@media print {
+  .app-header,
+  .recipe-actions-bar,
+  .back-button,
+  .action-button {
+    display: none !important;
+  }
+
+  .recipe-detail-container {
+    padding: 0;
+  }
+
+  .recipe-header {
+    page-break-inside: avoid;
+  }
+
+  .recipe-content {
+    page-break-inside: avoid;
+  }
+}
